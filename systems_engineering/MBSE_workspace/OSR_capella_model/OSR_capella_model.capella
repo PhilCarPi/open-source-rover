@@ -50,6 +50,9 @@
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="b905af62-2e41-4cfe-930d-2391c42a6571" name="Develop and Maintain Technical Specification"
             description="&lt;h1>Capability Description&lt;/h1>&#xA;&#xA;&lt;p>Develop and maintain the &lt;u>technical specification&lt;/u> of an open-source engineering project so as to make it accessible to anyone wishing to contribute to it or wishing to implement its specification.&lt;/p>&#xA;"/>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="57a240a1-185f-472f-b738-16f6d54f758f" name="Make Implementation Accessible to a Wide Range of Technical Expertise"
+            description="&lt;h1>Capability Description&lt;/h1>&#xA;&#xA;&lt;p>Ensure that:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>The level of technical experience necessary to assemble and program the engineering project is such that it does not require&amp;nbsp;formal education in a technical domain,&lt;/li>&#xA;&#x9;&lt;li>The level of technical experience necessary to modify the technical specification of the engineering project is such that is does not require professional experience in a technical field (e.g., a college/university student should be able to understand and modify the specification according to his needs).&lt;/li>&#xA;&lt;/ol>&#xA;"/>
       </ownedAbstractCapabilityPkg>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
           id="740dbaf6-8f74-413f-b684-fec5df8be975" name="Interfaces"/>
