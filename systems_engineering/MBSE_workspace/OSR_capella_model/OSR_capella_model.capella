@@ -291,7 +291,21 @@
             </ownedLogicalComponentPkgs>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="2a6c6900-ed8d-4076-a170-eb1155db0d7d" name="CONTROL"/>
+              id="2a6c6900-ed8d-4076-a170-eb1155db0d7d" name="CONTROL">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="26d1c0cb-0aaa-4e78-b885-5392bd4c0a73"
+                name="COMMUNICATIONS" abstractType="#68f154fa-4db6-434f-9922-d2621e1f6798"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0bde3431-2ab5-4c5d-9432-6b9b266a131a"
+                name="MOTOR CONTROL" abstractType="#2f795dce-d817-43b9-9193-4362e7069442"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="68f154fa-4db6-434f-9922-d2621e1f6798" name="COMMUNICATIONS"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="2f795dce-d817-43b9-9193-4362e7069442" name="MOTOR CONTROL"/>
+            <ownedLogicalComponentPkgs xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
+                id="4509450d-b7fd-4883-9483-e099fbb00d3b" name="Diagrams">
+              <ownedLogicalComponentPkgs xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
+                  id="1a7fc7bd-cd59-4455-8ee2-e5e6eb6c0f0f" name="Context"/>
+            </ownedLogicalComponentPkgs>
+          </ownedLogicalComponents>
           <ownedLogicalComponentPkgs xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
               id="0b60bca8-2b52-4393-93c7-d79d906f4654" name="Diagrams">
             <ownedLogicalComponentPkgs xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
