@@ -243,11 +243,22 @@
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="f60b1183-4598-4a93-bc3f-4f3863cf789c" name="BODY"/>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="13f110a5-53d7-4e9c-b333-002c7cf6c742" name="PROPULSION"/>
+              id="13f110a5-53d7-4e9c-b333-002c7cf6c742" name="PROPULSION">
+            <ownedLogicalComponentPkgs xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
+                id="f3ea76f3-60b8-4573-b82e-e6bd890f615c" name="Diagrams">
+              <ownedLogicalComponentPkgs xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
+                  id="6107bda2-45d9-42e1-a232-191548ca5cbe" name="Context"/>
+            </ownedLogicalComponentPkgs>
+          </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="0c78c0bc-cc5e-4634-8053-a936b1178367" name="CHASSIS"/>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="5e95050e-313e-48ed-abcc-306354c01b1b" name="PAYLOAD"/>
+          <ownedLogicalComponentPkgs xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
+              id="0b60bca8-2b52-4393-93c7-d79d906f4654" name="Diagrams">
+            <ownedLogicalComponentPkgs xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
+                id="047d2f7a-961d-4151-80c4-76075f0a914e" name="Context"/>
+          </ownedLogicalComponentPkgs>
         </ownedLogicalComponents>
       </ownedLogicalComponentPkg>
       <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
