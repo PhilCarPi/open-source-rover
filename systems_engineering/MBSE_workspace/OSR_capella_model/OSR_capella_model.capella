@@ -254,12 +254,16 @@
                 name="TRACTION" abstractType="#03917029-1631-4801-945e-6b8db30200d6"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="74c44600-de29-4200-a985-4db84c0c750a"
                 name="SUSPENSION" abstractType="#2563859f-ec7b-49a7-9d10-553d3f2bb5e6"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6d5f2702-2bcd-491b-b0d3-904de10f6b9f"
+                name="STEERING" abstractType="#174f61a2-2809-4b1f-9667-9bf4c2861611"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="ae495617-2d9f-4196-b687-9499318f0519" name="POWER TRAIN"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="03917029-1631-4801-945e-6b8db30200d6" name="TRACTION"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="2563859f-ec7b-49a7-9d10-553d3f2bb5e6" name="SUSPENSION"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="174f61a2-2809-4b1f-9667-9bf4c2861611" name="STEERING"/>
             <ownedLogicalComponentPkgs xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
                 id="f3ea76f3-60b8-4573-b82e-e6bd890f615c" name="Diagrams">
               <ownedLogicalComponentPkgs xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
