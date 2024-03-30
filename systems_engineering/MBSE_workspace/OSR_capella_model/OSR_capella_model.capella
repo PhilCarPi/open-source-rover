@@ -249,7 +249,7 @@
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="13f110a5-53d7-4e9c-b333-002c7cf6c742" name="PROPULSION">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e12f0e16-712e-4a06-a636-e9ffab339e2b"
-                name="POWER TRAIN" abstractType="#ae495617-2d9f-4196-b687-9499318f0519"/>
+                name="POWERTRAIN" abstractType="#ae495617-2d9f-4196-b687-9499318f0519"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="05e7ad48-f52b-4286-881c-e3c3829165ee"
                 name="TRACTION" abstractType="#03917029-1631-4801-945e-6b8db30200d6"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="74c44600-de29-4200-a985-4db84c0c750a"
@@ -257,7 +257,7 @@
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6d5f2702-2bcd-491b-b0d3-904de10f6b9f"
                 name="STEERING" abstractType="#174f61a2-2809-4b1f-9667-9bf4c2861611"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="ae495617-2d9f-4196-b687-9499318f0519" name="POWER TRAIN"/>
+                id="ae495617-2d9f-4196-b687-9499318f0519" name="POWERTRAIN"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="03917029-1631-4801-945e-6b8db30200d6" name="TRACTION"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"

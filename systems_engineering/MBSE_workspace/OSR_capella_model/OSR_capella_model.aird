@@ -22,7 +22,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg" href="OSR_capella_model.capella#047d2f7a-961d-4151-80c4-76075f0a914e"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_E_5zcO30Ee6wIYJLIWe62A" name="[LAB]_[SOI_PROPULSION]_[SOI_decomposition]_[context]" repPath="#_E_3-QO30Ee6wIYJLIWe62A" changeId="1711757426992">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_E_5zcO30Ee6wIYJLIWe62A" name="[LAB]_[SOI_PROPULSION]_[SOI_decomposition]_[context]" repPath="#_E_3-QO30Ee6wIYJLIWe62A" changeId="1711757866376">
         <eAnnotations xmi:type="description:DAnnotation" uid="_E_7oou30Ee6wIYJLIWe62A" source="https://www.polarsys.org/capella/dannotation/DesactivatedFilters">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E_7oo-30Ee6wIYJLIWe62A" key="hide.computed.component.exchanges.filter" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E_7opO30Ee6wIYJLIWe62A" key="hide.computed.physical.links.filter" value="true"/>
@@ -472,7 +472,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='LAB%20Logical%20Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='LAB%20Logical%20Component']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_VaFt8O30Ee6wIYJLIWe62A" name="POWER TRAIN">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_VaFt8O30Ee6wIYJLIWe62A" name="POWERTRAIN">
         <target xmi:type="org.polarsys.capella.core.data.cs:Part" href="OSR_capella_model.capella#e12f0e16-712e-4a06-a636-e9ffab339e2b"/>
         <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="OSR_capella_model.capella#e12f0e16-712e-4a06-a636-e9ffab339e2b"/>
         <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalComponent" href="OSR_capella_model.capella#ae495617-2d9f-4196-b687-9499318f0519"/>
