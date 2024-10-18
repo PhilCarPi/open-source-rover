@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--Capella_Version_7.0.0-->
+<!--Capella_Version_6.1.0-->
 <org.polarsys.capella.core.data.capellamodeller:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/7.0.0"
-    xmlns:org.polarsys.capella.core.data.capellacommon="http://www.polarsys.org/capella/core/common/7.0.0"
-    xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/7.0.0"
-    xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/7.0.0"
-    xmlns:org.polarsys.capella.core.data.cs="http://www.polarsys.org/capella/core/cs/7.0.0"
-    xmlns:org.polarsys.capella.core.data.ctx="http://www.polarsys.org/capella/core/ctx/7.0.0"
-    xmlns:org.polarsys.capella.core.data.epbs="http://www.polarsys.org/capella/core/epbs/7.0.0"
-    xmlns:org.polarsys.capella.core.data.fa="http://www.polarsys.org/capella/core/fa/7.0.0"
-    xmlns:org.polarsys.capella.core.data.information="http://www.polarsys.org/capella/core/information/7.0.0"
-    xmlns:org.polarsys.capella.core.data.information.datatype="http://www.polarsys.org/capella/core/information/datatype/7.0.0"
-    xmlns:org.polarsys.capella.core.data.information.datavalue="http://www.polarsys.org/capella/core/information/datavalue/7.0.0"
-    xmlns:org.polarsys.capella.core.data.interaction="http://www.polarsys.org/capella/core/interaction/7.0.0"
-    xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/7.0.0"
-    xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/7.0.0"
-    xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/7.0.0"
-    xmlns:org.polarsys.capella.core.data.pa.deployment="http://www.polarsys.org/capella/core/pa/deployment/7.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/6.0.0"
+    xmlns:org.polarsys.capella.core.data.capellacommon="http://www.polarsys.org/capella/core/common/6.0.0"
+    xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/6.0.0"
+    xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/6.0.0"
+    xmlns:org.polarsys.capella.core.data.cs="http://www.polarsys.org/capella/core/cs/6.0.0"
+    xmlns:org.polarsys.capella.core.data.ctx="http://www.polarsys.org/capella/core/ctx/6.0.0"
+    xmlns:org.polarsys.capella.core.data.epbs="http://www.polarsys.org/capella/core/epbs/6.0.0"
+    xmlns:org.polarsys.capella.core.data.fa="http://www.polarsys.org/capella/core/fa/6.0.0"
+    xmlns:org.polarsys.capella.core.data.information="http://www.polarsys.org/capella/core/information/6.0.0"
+    xmlns:org.polarsys.capella.core.data.information.datatype="http://www.polarsys.org/capella/core/information/datatype/6.0.0"
+    xmlns:org.polarsys.capella.core.data.information.datavalue="http://www.polarsys.org/capella/core/information/datavalue/6.0.0"
+    xmlns:org.polarsys.capella.core.data.interaction="http://www.polarsys.org/capella/core/interaction/6.0.0"
+    xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/6.0.0"
+    xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/6.0.0"
+    xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/6.0.0"
+    xmlns:org.polarsys.capella.core.data.pa.deployment="http://www.polarsys.org/capella/core/pa/deployment/6.0.0"
     id="382879fb-9f9e-49a6-b613-c4090197549c"
     name="OSR_capella_model">
   <ownedExtensions xsi:type="libraries:ModelInformation" id="792bdb0d-429a-4be5-88a2-86493656961d"/>
@@ -334,10 +334,10 @@
             id="6e89423f-a6f5-4001-8be9-8e5cf6e27e3c" name="Root Physical Function">
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
               id="0cd94c93-a165-4944-aaaf-33af2d783095" name="Transfer Electrical Energy"
-              description="&lt;p>This Function will transfer electrical energy from a source to all electrical consumers.&lt;/p>&#xA;&#xA;&lt;p>This Function includes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to the DC-DC 12V, 5V, and 3.3V regulators.&lt;/li>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to the RoboClaw motor drivers&lt;/li>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to the Motor State Indicator LEDs&lt;/li>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to the Power Test Points&lt;/li>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to electrical loads external to the Motor Board through a dedicated pin header&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>This Function excludes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>&amp;nbsp;Voltage regulation of electrical power&lt;/li>&#xA;&#x9;&lt;li>Current regulation of electical power&lt;/li>&#xA;&#x9;&lt;li>Protection against electrical faults (e.g., OC, SC, reverse polarity, etc)&lt;/li>&#xA;&lt;/ol>&#xA;"/>
+              description="&lt;p>This Function will transfer electrical energy from a source to all electrical consumers.&lt;/p>&#xA;&#xA;&lt;p>This Function includes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to the DC-DC 12V, 5V, and 3.3V regulators&lt;/li>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to the RoboClaw motor drivers&lt;/li>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to the Motor State Indicator LEDs&lt;/li>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to the Power Test Points&lt;/li>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to electrical loads external to the Motor Board through a dedicated pin header&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>This Function excludes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>&amp;nbsp;Voltage regulation of electrical power&lt;/li>&#xA;&#x9;&lt;li>Current regulation of electical power&lt;/li>&#xA;&#x9;&lt;li>Protection against electrical faults (e.g., OC, SC, reverse polarity, etc)&lt;/li>&#xA;&lt;/ol>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
               id="0e2c7b8a-4dac-4b18-a435-174cc1ee9bdd" name="Protect Electronics"
-              description="&lt;p>This Function will protect the electronics on the Motor Board PCBA against electrical faults.&lt;/p>&#xA;&#xA;&lt;p>This Function includes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>Over-current protection (Fuse) for the external electrical power source input (e.g., battery, bench top power supply, etc.)&lt;/li>&#xA;&#x9;&lt;li>Protection of the RoboClaw boards from In-rush current coming out of the external electrical power source&lt;/li>&#xA;&#x9;&lt;li>Protection from reverse current coming from the Motors through the RoboClaw boards&lt;/li>&#xA;&#x9;&lt;li>Reverse voltage protection,&amp;nbsp;over-current/short circuit&amp;nbsp;protection, and under-voltage&amp;nbsp;lockout&amp;nbsp;on the 3.3V, 5V, and 12V distribution buses&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>This Function excludes:&lt;/p>&#xA;&#xA;&lt;p>&amp;nbsp;&lt;/p>&#xA;&#xA;&lt;p>N/A&lt;/p>&#xA;"/>
+              description="&lt;p>This Function will protect the electronics on the Motor Board PCBA against electrical faults.&lt;/p>&#xA;&#xA;&lt;p>This Function includes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>Over-current protection (Fuse) for the external electrical power source input (e.g., battery, bench top power supply, etc.)&lt;/li>&#xA;&#x9;&lt;li>Protection of the RoboClaw boards from In-rush current coming out of the external electrical power source&lt;/li>&#xA;&#x9;&lt;li>Protection from reverse current coming from the Motors through the RoboClaw boards&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>This Function excludes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>Active monitoring of electrical energy. That is, the protection function is implemented using passive electrical components.&lt;/li>&#xA;&lt;/ol>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
               id="eb7d8e72-3df6-4e5d-bf82-41dc19cba62c" name="Control Electrical Energy Transfer"
               description="&lt;p>This Function will control the flow of electrical energy coming from an external source.&lt;/p>&#xA;&#xA;&lt;p>This Function includes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>ON/OFF&amp;nbsp;control of the electrical power coming from the external electrical power source (i.e., Physical ON.OFF Switch)&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>This Function excludes: N/A&lt;/p>&#xA;"/>
@@ -348,8 +348,7 @@
               id="5bef353d-b2d6-492a-aca5-2b9f2a104440" name="Report Electrical Energy Transfer Status"
               description="&lt;p>This Function will report the status of electrical power flow from an external source to the electrcial loads.&lt;/p>&#xA;&#xA;&lt;p>This Function includes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>Reporting the presence of electrical power from an external source (BATT+ LED)&lt;/li>&#xA;&#x9;&lt;li>Reporting the presence of regulated electrical power derived from the external source (PWR LED)&lt;/li>&#xA;&#x9;&lt;li>Reporting the presence of regulated 12V electrical power (12V motor LED)&lt;/li>&#xA;&#x9;&lt;li>Reporting the presence of regulated 5V electrical power (5V motor LED)&lt;/li>&#xA;&#x9;&lt;li>Reporting the presence of regulated 3.3V electrical power (3.3V motor LED)&lt;/li>&#xA;&#x9;&lt;li>Reporting a failure condition (TBD) with the main input power (i.e., PWR)&lt;/li>&#xA;&#x9;&lt;li>Reporting of Voltage, Current., and Power (INA260)&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>This Function excludes: N/A&lt;/p>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="4a6d64d9-2319-4b55-a975-1cd0f829235d" name="Regulate Electrical Energy"
-              description="&lt;p>This function will regulate the voltages for electrical power distributed to the loads.&lt;/p>&#xA;&#xA;&lt;p>This function includes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>Voltage reulation of a 3.3V distribution bus,&lt;/li>&#xA;&#x9;&lt;li>Voltage regulation of a 5V distribution bus, and&lt;/li>&#xA;&#x9;&lt;li>Voltage regulation of a 12V distribution bus&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>This function excludes:&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>Current regulation, or&lt;/li>&#xA;&#x9;&lt;li>Over-current protection&lt;/li>&#xA;&lt;/ul>&#xA;"/>
+              id="4a6d64d9-2319-4b55-a975-1cd0f829235d" name="Regulate Electrical Energy"/>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="838383b6-5a18-4b67-87d8-8db05bab8316" targetElement="#d2533d31-07f2-4e27-b725-522e1d407568"
               sourceElement="#6e89423f-a6f5-4001-8be9-8e5cf6e27e3c"/>
@@ -375,8 +374,6 @@
               name="Arduino Shield" abstractType="#ac788415-1fdc-4e87-ade8-32899725a734"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="dc762993-40c5-4caa-a399-22a450735129"
               name="PWR Distribution BPC" abstractType="#a6ef24fe-030c-4ece-9d37-cc2848a1a024"/>
-          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f5822961-1ad9-48d7-b6b0-b9cc7e2c18ba"
-              name="Voltage Regulation BPC" abstractType="#3d7373b0-63d4-4486-9980-c1291f8b5d49"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="2f1cb947-49ef-492e-800b-19a8c3cc1222" targetElement="#226ae547-1185-4f75-acf3-7402fbeaae11"
               sourceElement="#235eb4bd-deef-4e70-8425-293fceb2d019"/>
@@ -394,6 +391,8 @@
                 name="Robo Claw Motor Output Connectors" abstractType="#3c360a44-d3a1-441e-815f-e1a5dd37c666"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="07f6633c-1052-40a6-861c-a7f772bcb128"
                 name="Alert Signal LED" abstractType="#73ddbc9d-d575-49f4-bc9d-2790f90846d7"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a25dfdf8-7493-40f9-adcc-00b13a5fd3cd"
+                name="Voltage Regulators" abstractType="#b02c5ec5-5af6-4a50-babf-4cdc42a4904b"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2ff533f1-a71f-4df1-932d-5d93976343c3"
                 name="PWM Driver" abstractType="#c6be060b-a1c1-4daa-97d2-8802990cf4a2"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="03795581-9589-4407-a3f0-35cc781697d7"
@@ -421,6 +420,9 @@
                 nature="NODE"/>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                 id="73ddbc9d-d575-49f4-bc9d-2790f90846d7" name="Alert Signal LED"
+                nature="NODE"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="b02c5ec5-5af6-4a50-babf-4cdc42a4904b" name="Voltage Regulators"
                 nature="NODE"/>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                 id="c6be060b-a1c1-4daa-97d2-8802990cf4a2" name="PWM Driver" nature="NODE"/>
@@ -471,9 +473,6 @@
                 id="179c8b8a-cacf-42d9-aeb8-0a4c5f96428f" targetElement="#4a6d64d9-2319-4b55-a975-1cd0f829235d"
                 sourceElement="#a6ef24fe-030c-4ece-9d37-cc2848a1a024"/>
           </ownedPhysicalComponents>
-          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="3d7373b0-63d4-4486-9980-c1291f8b5d49" name="Voltage Regulation BPC"
-              nature="BEHAVIOR"/>
           <ownedPhysicalComponentPkgs xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponentPkg"
               id="f5155b1a-c92c-4288-84ba-34c6ae775bb8" name="Diagrams">
             <ownedPhysicalComponentPkgs xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponentPkg"
