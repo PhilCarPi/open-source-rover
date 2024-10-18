@@ -17,6 +17,7 @@
     xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/6.0.0"
     xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/6.0.0"
     xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/6.0.0"
+    xmlns:org.polarsys.capella.core.data.pa.deployment="http://www.polarsys.org/capella/core/pa/deployment/6.0.0"
     id="382879fb-9f9e-49a6-b613-c4090197549c"
     name="OSR_capella_model">
   <ownedExtensions xsi:type="libraries:ModelInformation" id="792bdb0d-429a-4be5-88a2-86493656961d"/>
@@ -331,6 +332,23 @@
           id="6293bb3e-969e-4ec3-a7a0-0214d04d0c49" name="Physical Functions">
         <ownedPhysicalFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
             id="6e89423f-a6f5-4001-8be9-8e5cf6e27e3c" name="Root Physical Function">
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="0cd94c93-a165-4944-aaaf-33af2d783095" name="Transfer Electrical Energy"
+              description="&lt;p>This Function will transfer electrical energy from a source to all electrical consumers.&lt;/p>&#xA;&#xA;&lt;p>This Function includes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to the DC-DC 12V, 5V, and 3.3V regulators&lt;/li>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to the RoboClaw motor drivers&lt;/li>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to the Motor State Indicator LEDs&lt;/li>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to the Power Test Points&lt;/li>&#xA;&#x9;&lt;li>Transfering&amp;nbsp;electrical&amp;nbsp;energy from an external power source (e.g., a battery, a bench top pwr supply, etc) to electrical loads external to the Motor Board through a dedicated pin header&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>This Function excludes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>&amp;nbsp;Voltage regulation of electrical power&lt;/li>&#xA;&#x9;&lt;li>Current regulation of electical power&lt;/li>&#xA;&#x9;&lt;li>Protection against electrical faults (e.g., OC, SC, reverse polarity, etc)&lt;/li>&#xA;&lt;/ol>&#xA;"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="0e2c7b8a-4dac-4b18-a435-174cc1ee9bdd" name="Protect Electronics"
+              description="&lt;p>This Function will protect the electronics on the Motor Board PCBA against electrical faults.&lt;/p>&#xA;&#xA;&lt;p>This Function includes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>Over-current protection (Fuse) for the external electrical power source input (e.g., battery, bench top power supply, etc.)&lt;/li>&#xA;&#x9;&lt;li>Protection of the RoboClaw boards from In-rush current coming out of the external electrical power source&lt;/li>&#xA;&#x9;&lt;li>Protection from reverse current coming from the Motors through the RoboClaw boards&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>This Function excludes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>Active monitoring of electrical energy. That is, the protection function is implemented using passive electrical components.&lt;/li>&#xA;&lt;/ol>&#xA;"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="eb7d8e72-3df6-4e5d-bf82-41dc19cba62c" name="Control Electrical Energy Transfer"
+              description="&lt;p>This Function will control the flow of electrical energy coming from an external source.&lt;/p>&#xA;&#xA;&lt;p>This Function includes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>ON/OFF&amp;nbsp;control of the electrical power coming from the external electrical power source (i.e., Physical ON.OFF Switch)&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>This Function excludes: N/A&lt;/p>&#xA;"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="41315cc6-262c-4f29-88d7-fa261866545c" name="Monitor Transfer Of Electrical Energy"
+              description="&lt;p>This Function will monitor the flow of electrical energy from an external power source to the electrical loads. This is in part&amp;nbsp;implemented by&amp;nbsp;the Digital&amp;nbsp;Multimeter&amp;nbsp;(P/N &lt;span class=&quot;marker&quot;>TBD&lt;/span>) and the INA260 daughter board&amp;nbsp;(P/N &lt;span class=&quot;marker&quot;>TBD&lt;/span>)&lt;/p>&#xA;&#xA;&lt;p>This Function includes monitors for:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>Current magnitude&lt;/li>&#xA;&#x9;&lt;li>Current direction&lt;/li>&#xA;&#x9;&lt;li>Voltage magnitude&lt;/li>&#xA;&#x9;&lt;li>Power consumption&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>This Function excludes: N/A&lt;/p>&#xA;"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="5bef353d-b2d6-492a-aca5-2b9f2a104440" name="Report Electrical Energy Transfer Status"
+              description="&lt;p>This Function will report the status of electrical power flow from an external source to the electrcial loads.&lt;/p>&#xA;&#xA;&lt;p>This Function includes:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>Reporting the presence of electrical power from an external source (BATT+ LED)&lt;/li>&#xA;&#x9;&lt;li>Reporting the presence of regulated electrical power derived from the external source (PWR LED)&lt;/li>&#xA;&#x9;&lt;li>Reporting the presence of regulated 12V electrical power (12V motor LED)&lt;/li>&#xA;&#x9;&lt;li>Reporting the presence of regulated 5V electrical power (5V motor LED)&lt;/li>&#xA;&#x9;&lt;li>Reporting the presence of regulated 3.3V electrical power (3.3V motor LED)&lt;/li>&#xA;&#x9;&lt;li>Reporting a failure condition (TBD) with the main input power (i.e., PWR)&lt;/li>&#xA;&#x9;&lt;li>Reporting of Voltage, Current., and Power (INA260)&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>This Function excludes: N/A&lt;/p>&#xA;"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="4a6d64d9-2319-4b55-a975-1cd0f829235d" name="Regulate Electrical Energy"/>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="838383b6-5a18-4b67-87d8-8db05bab8316" targetElement="#d2533d31-07f2-4e27-b725-522e1d407568"
               sourceElement="#6e89423f-a6f5-4001-8be9-8e5cf6e27e3c"/>
@@ -348,9 +366,118 @@
             name="Physical System" abstractType="#235eb4bd-deef-4e70-8425-293fceb2d019"/>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
             id="235eb4bd-deef-4e70-8425-293fceb2d019" name="Physical System">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e19b8dfb-248d-4000-a4c8-591dcbddbf3f"
+              name="Motor Board" abstractType="#4b96916f-26ac-4b6e-a3ab-03a8c54010f8"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="d2a2f243-44d3-47a0-9cb0-dc6f683fc3dd"
+              name="Brain Board" abstractType="#115caf25-f733-4be3-b2ab-6fe44696c696"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4dc68b3b-3c49-4b28-9ba2-eaadbaa99de7"
+              name="Arduino Shield" abstractType="#ac788415-1fdc-4e87-ade8-32899725a734"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="dc762993-40c5-4caa-a399-22a450735129"
+              name="PWR Distribution BPC" abstractType="#a6ef24fe-030c-4ece-9d37-cc2848a1a024"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="2f1cb947-49ef-492e-800b-19a8c3cc1222" targetElement="#226ae547-1185-4f75-acf3-7402fbeaae11"
               sourceElement="#235eb4bd-deef-4e70-8425-293fceb2d019"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="4b96916f-26ac-4b6e-a3ab-03a8c54010f8" name="Motor Board" nature="NODE">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a1d859bd-7274-4372-8b01-199012231a15"
+                name="Power Distribution" abstractType="#14100bea-4881-429c-bdfd-5c5efc0d6ca2">
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="76e4e1af-7d12-46cd-a897-7a3ec43bf99b" deployedElement="#dc762993-40c5-4caa-a399-22a450735129"
+                  location="#a1d859bd-7274-4372-8b01-199012231a15"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="052eb151-26eb-4a0d-af34-c69cf0e3f0a6"
+                name="Robo Claw Pin Heaaders" abstractType="#5ece17a9-6d58-411d-bfe6-57286af7c658"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="d4c104b7-bd43-4730-a407-e2f197e68dbc"
+                name="Robo Claw Motor Output Connectors" abstractType="#3c360a44-d3a1-441e-815f-e1a5dd37c666"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="07f6633c-1052-40a6-861c-a7f772bcb128"
+                name="Alert Signal LED" abstractType="#73ddbc9d-d575-49f4-bc9d-2790f90846d7"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a25dfdf8-7493-40f9-adcc-00b13a5fd3cd"
+                name="Voltage Regulators" abstractType="#b02c5ec5-5af6-4a50-babf-4cdc42a4904b"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2ff533f1-a71f-4df1-932d-5d93976343c3"
+                name="PWM Driver" abstractType="#c6be060b-a1c1-4daa-97d2-8802990cf4a2"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="03795581-9589-4407-a3f0-35cc781697d7"
+                name="Corner Steering Servos Pin Header" abstractType="#f1a1799b-a28f-4bfb-848d-26e9fe2a1aab"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="75a06523-2035-4ce7-9899-552a647c59f0"
+                name="Extra PWM Pin Headers" abstractType="#7d6d8680-8804-4f30-bef8-5dbc6e6f12a8"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9e1704a9-3bec-4239-8c74-01e589882812"
+                name="Power Test Points" abstractType="#51552596-d766-4a32-aa35-440b0daf515f"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="cb1e9db2-f591-48b3-89ea-6d29b342fe55"
+                name="Inter-board Connector" abstractType="#ef1f2a33-c602-4eb5-a37c-28a4bf5d9aed"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="eae534b5-8aa5-4265-b795-6a79c7234124"
+                name="Motor State Indicator LEDs" abstractType="#30bd2974-bb2e-4564-84a6-5b525a2740c1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b3adfe76-ca49-4a73-9ad6-fabb0d79b3ac"
+                name="Test Pin Header" abstractType="#25089235-2c0d-485a-9b60-562298297f2b"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5397dcab-c222-4644-be92-1d2fba0d3be9"
+                name="Robo Claw Power In Connectors" abstractType="#b9a819d0-6799-4d5a-b387-efbe26a8c212"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="14100bea-4881-429c-bdfd-5c5efc0d6ca2" name="Power Distribution"
+                kind="HARDWARE" nature="NODE"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="5ece17a9-6d58-411d-bfe6-57286af7c658" name="Robo Claw Pin Heaaders"
+                nature="NODE"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="3c360a44-d3a1-441e-815f-e1a5dd37c666" name="Robo Claw Motor Output Connectors"
+                nature="NODE"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="73ddbc9d-d575-49f4-bc9d-2790f90846d7" name="Alert Signal LED"
+                nature="NODE"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="b02c5ec5-5af6-4a50-babf-4cdc42a4904b" name="Voltage Regulators"
+                nature="NODE"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="c6be060b-a1c1-4daa-97d2-8802990cf4a2" name="PWM Driver" nature="NODE"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="f1a1799b-a28f-4bfb-848d-26e9fe2a1aab" name="Corner Steering Servos Pin Header"
+                nature="NODE"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="7d6d8680-8804-4f30-bef8-5dbc6e6f12a8" name="Extra PWM Pin Headers"
+                nature="NODE"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="51552596-d766-4a32-aa35-440b0daf515f" name="Power Test Points"
+                nature="NODE"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="ef1f2a33-c602-4eb5-a37c-28a4bf5d9aed" name="Inter-board Connector"
+                nature="NODE"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="30bd2974-bb2e-4564-84a6-5b525a2740c1" name="Motor State Indicator LEDs"
+                nature="NODE"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="25089235-2c0d-485a-9b60-562298297f2b" name="Test Pin Header" nature="NODE"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="b9a819d0-6799-4d5a-b387-efbe26a8c212" name="Robo Claw Power In Connectors"
+                nature="NODE"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="115caf25-f733-4be3-b2ab-6fe44696c696" name="Brain Board" nature="NODE"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="ac788415-1fdc-4e87-ade8-32899725a734" name="Arduino Shield" nature="NODE"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="a6ef24fe-030c-4ece-9d37-cc2848a1a024" name="PWR Distribution BPC"
+              kind="HARDWARE" nature="BEHAVIOR">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="71db3ecc-b1d7-4d0a-bd94-4f8c62c3ebc0" targetElement="#0cd94c93-a165-4944-aaaf-33af2d783095"
+                sourceElement="#a6ef24fe-030c-4ece-9d37-cc2848a1a024"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="9b589ffc-a5c0-42d3-86f6-6af42cc7831c" targetElement="#0e2c7b8a-4dac-4b18-a435-174cc1ee9bdd"
+                sourceElement="#a6ef24fe-030c-4ece-9d37-cc2848a1a024"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="858163c8-e386-4060-a66f-2fc191197d3c" targetElement="#eb7d8e72-3df6-4e5d-bf82-41dc19cba62c"
+                sourceElement="#a6ef24fe-030c-4ece-9d37-cc2848a1a024"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="c18fbee0-a19e-40b2-96bb-6813d8b5641d" targetElement="#41315cc6-262c-4f29-88d7-fa261866545c"
+                sourceElement="#a6ef24fe-030c-4ece-9d37-cc2848a1a024"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="01407f69-15d3-4f33-9956-d65e91db7e91" targetElement="#5bef353d-b2d6-492a-aca5-2b9f2a104440"
+                sourceElement="#a6ef24fe-030c-4ece-9d37-cc2848a1a024"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="179c8b8a-cacf-42d9-aeb8-0a4c5f96428f" targetElement="#4a6d64d9-2319-4b55-a975-1cd0f829235d"
+                sourceElement="#a6ef24fe-030c-4ece-9d37-cc2848a1a024"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponentPkgs xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponentPkg"
+              id="f5155b1a-c92c-4288-84ba-34c6ae775bb8" name="Diagrams">
+            <ownedPhysicalComponentPkgs xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponentPkg"
+                id="57de95db-3135-470d-a2ee-5f8080ee6017" name="Context"/>
+          </ownedPhysicalComponentPkgs>
         </ownedPhysicalComponents>
       </ownedPhysicalComponentPkg>
       <ownedLogicalArchitectureRealizations xsi:type="org.polarsys.capella.core.data.pa:LogicalArchitectureRealization"
