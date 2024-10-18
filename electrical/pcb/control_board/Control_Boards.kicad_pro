@@ -599,6 +599,19 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "b39227c9-3468-4a71-a353-de543d98feee",
+      "Root"
+    ],
+    [
+      "00000000-0000-0000-0000-000060a51bac",
+      "Motor Board"
+    ],
+    [
+      "00000000-0000-0000-0000-000060a5279e",
+      "Brain Board"
+    ]
+  ],
   "text_variables": {}
 }
